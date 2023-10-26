@@ -1,0 +1,68 @@
+<!--Definimos la versión de html a usar(la última versión)-->
+<!DOCTYPE html>
+<html lang="es">
+
+<!--La cabeza de la web en donde enlazaremos los diferentes archivos a usar-->
+<head>
+<title>En vivo | Los chamos informan</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/css/live.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.cdnfonts.com/css/apple-ii-screen-typeface" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"> 
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+</head>
+
+<!--Contenido de la web-->
+<body>
+    
+    <!--Barra de navegación-->
+    <div class="nav">
+    <input type="checkbox" id="nav-check">
+
+    <!--Lado del nav donde aparecerá el título de la web-->
+    <div class="nav-header">
+    <div class="nav-title">
+    <i class="fa-solid fa-music fa-beat" style="color: #a52112;"></i> Los chamos informan
+    </div>
+     </div>
+
+    <!--Lado en donde saldrá otros sitios de la misma web--> 
+    <div class="nav-links">
+
+    <!--Sección 1 de la web-->
+    <a href="/index.html" ><i class="fa-solid fa-house fa-bounce" style="color: #f7f7f7;"></i> | Lobby</a>
+
+    <!--Sección 2 de la web-->
+    <a href="/shortlist.html"><i class="fa-solid fa-ghost" style="color: #f5f7fa;"></i> | ShortList</a>
+
+    <!--Sección 3 de la web-->
+    <a href="/playlist.html"><i class="fa-solid fa-folder-open"></i> | All Playlist</a>
+
+    <!--Sección 4 de la web-->
+    <a href="/live.html"><i class="fa-solid fa-mug-saucer fa-fade" style="color: #fafcff;"></i> | En vivo</a>
+      </div>
+    </div>
+
+    
+<!--Caja central-->
+<div class="center_box">
+
+<!--Título de la sección-->
+<div>
+<p> <i class="fa-solid fa-rss fa-beat" style="color: #fafafa;"></i> | Sección dedicada para la Radio en vivo!</p>
+</div>
+
+<!-- HTML5 Player (streamerr.co) -->
+<audio class="radio" controls="true" preload="none"> 
+<source src="https://207.244.66.85:12236/live">
+Tú navegador no soporta el elemento Audio...
+</audio>
+</div>
+
+<!-- <link href="https://html5players.mexiserver.com/3/css/myCast.min.css" type="text/css" rel="stylesheet"><script src="https://code.jquery.com/jquery-3.0.0.min.js"></script><div class="myCast" id="stream1" align="center"></div><script src="https://html5players.mexiserver.com/3/js/myCast.min.js"></script><script> $("#stream1").myCast({ URL: "https://207.244.66.85:12236:12236", version: "2", artwork: "true", logo: "https://cdn.discordapp.com/attachments/816701828771217440/1164753765375684648/logo.webp?ex=65445c79&is=6531e779&hm=91074475f081a6e70bc4ec77&", bg: "deeppurple", accent: "", vertical_layout: false, autoplay: true, blur: true, blur_opacity: 0.16, lang: "es" }) </script>
+     -->
+<!--Scripts-->
+<script src="https://kit.fontawesome.com/1b50d6a4c9.js" crossorigin="anonymous"></script>
+<script src="./scripts/loader.js"></script>
+</body>
+</html>
