@@ -153,6 +153,8 @@ border-radius: 50%;
 
 audio::-webkit-media-controls-play-button:hover { background-color: rgba(177,212,224, .7); }
 
+.audio{ margin: 0 auto; position: relative; height: 78px; width: 100%;}
+
 /*<--Apartado dedicado al Responsive-->*/
 
 /*Telefono*/
