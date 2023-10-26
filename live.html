@@ -52,6 +52,9 @@
 <p> <i class="fa-solid fa-rss fa-beat" style="color: #fafafa;"></i> | Sección dedicada para la Radio en vivo!</p>
 </div>
 
+
+    
+    
 <!-- HTML5 Player (streamerr.co) -->
 <audio class="radio" src="https://207.244.66.85:12236/live" controls="true" preload="none"> 
 </audio>
@@ -62,5 +65,10 @@
 <!--Scripts-->
 <script src="https://kit.fontawesome.com/1b50d6a4c9.js" crossorigin="anonymous"></script>
 <script src="./public/scripts/loader.js"></script>
+<script src="audiojs/audio.min.js"></script>
+<script>
+//<-Inicializando los audios->
+audiojs.events.ready(function() { let as = audiojs.createAll(); });
+</script>
 </body>
 </html>
