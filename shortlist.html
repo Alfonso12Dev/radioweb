@@ -1,0 +1,64 @@
+<!--Definimos la versión de html a usar(la última versión)-->
+<!DOCTYPE html>
+<html lang="es">
+
+<!--La cabeza de la web en donde enlazaremos los diferentes archivos a usar-->
+<head>
+<title>Shortlist | Los chamos informan</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/css/shortlist.css" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.cdnfonts.com/css/apple-ii-screen-typeface" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"> 
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+</head>
+
+<!--Contenido de la web-->
+<body>
+
+    <!--Barra de navegación-->
+    <div class="nav">
+    <input type="checkbox" id="nav-check">
+
+    <!--Lado del nav donde aparecerá el título de la web-->
+    <div class="nav-header">
+    <div class="nav-title">
+    <i class="fa-solid fa-music fa-beat" style="color: #a52112;"></i> Los chamos informan
+    </div>
+     </div>
+
+    <!--Lado en donde saldrá otros sitios de la misma web--> 
+    <div class="nav-links">
+
+    <!--Sección 1 de la web-->
+    <a href="/index.html" ><i class="fa-solid fa-house fa-bounce" style="color: #f7f7f7;"></i> | Lobby</a>
+
+    <!--Sección 2 de la web-->
+    <a href="/shortlist.html"><i class="fa-solid fa-ghost" style="color: #f5f7fa;"></i> | ShortList</a>
+
+    <!--Sección 3 de la web-->
+    <a href="/playlist.html"><i class="fa-solid fa-folder-open"></i> | All Playlist</a>
+
+    <!--Sección 4 de la web-->
+    <a href="/live.html"><i class="fa-solid fa-mug-saucer fa-fade" style="color: #fafcff;"></i> | En vivo</a>
+      </div>
+    </div>
+
+
+<!--Caja central-->
+<div class="center_box">
+
+<!--Título de la sección-->
+<div>
+<p> <i class="fa-brands fa-spotify fa-fade" style="font-size: 25px; color: #f9fafb;"></i> ¿Deseas relajarte un rato y escuchar extracto de música de la radio <span style="color: #15d2ef">Los chamos informan</span>? Utilice este apartado para ello</p>
+</div>
+
+<!--Usamos un widget de spotify para que reproduzca un álbum lleno de música-->
+<iframe class="shortlist" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator&theme=0" frameBorder="0" width="100%" height="380" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<!--Scripts-->
+<script src="https://kit.fontawesome.com/1b50d6a4c9.js" crossorigin="anonymous"></script>
+<script src="./scripts/loader.js"></script>
+<script src="./scripts/live.js"></script>
+</body>
+</html>
