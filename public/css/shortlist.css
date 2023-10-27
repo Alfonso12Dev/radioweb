@@ -1,0 +1,179 @@
+/*<--Hacemos que todos los elementos tengan una animación de transición-->*/
+* { box-sizing: border-box; transition: 0.4s ease all; cursor: url(http://cur.cursors-4u.net/anime/ani-12/ani1136.ani), url(http://cur.cursors-4u.net/anime/ani-12/ani1136.gif), auto; }
+
+/*https://replit.com/@Evanisha/Personal-Information-Stealer
+
+/*<--Fondo de la web-->*/
+body {
+background: url("https://bitcoinmaniagame.com/app/images/homepage/sity_2.png");
+background-attachment: fixed;
+background-color: #1e0150;
+color: white;
+background-size: cover;
+font-family: 'Apple II Screen Typeface', sans-serif;
+font-size: 20px;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+margin: 20%;
+margin-top: 10%;   
+}
+
+/*<-Caja central en donde estará el en vivo->*/
+.center_box {
+background-color: rgba(35,23,101,.5);
+border: 1px solid #234b79;
+border-radius: 5px;
+width: 60%;
+padding: 40px 40px;
+}
+
+/*<--Navegador-->**/
+.nav {
+height: 62px;
+width: 100%;
+background: black;
+background-color: rgb(0 0 0 / 60%);
+position: fixed;
+top: 0%;
+}
+
+/*Sí el navegador es mayor que el nav-heador, se pone el siguiente estilo*/
+.nav > .nav-header { display: inline; }
+
+/*<-Sí el tamaño del nav es mayor que el header y el título, se hará el siguiente código->*/
+.nav > .nav-header > .nav-title {
+display: inline-block;
+font-size: 22px;
+font-weight: 15px;
+color: brown;
+float: left;
+position: relative;
+padding: 10px 10px 10px 10px;
+}
+
+/*<-Sí el nav es mayor que la clase en donde aparece el título, se ejecuta el siguiente código->*/
+.nav > .nav-btn { display: none; }
+
+/*<-Sí el nav es mayor que los links del nav, se ejecuta el siguiente código->*/
+.nav > .nav-links { font-size: 18px; left: -10%; position: relative; }
+
+/*<-Sí el navegador es mayor que los links y a, se ejecuta el siguiente código->*/
+.nav > .nav-links > a {
+display: inline-block;
+padding: 13px 10px 13px 10px;
+text-decoration: none;
+color: #efefef;
+}
+
+/*<-Sí el nav es mayor que los enlaces y el link del hover, entonces el background se hace transparente->*/
+.nav > .nav-links > a:hover { background-color: rgba(0, 0, 0, 0.3); }
+
+/*<-Sí el navegador es mayor que el nav-check, no se muestra nada->*/
+.nav > #nav-check { display: none; }
+
+/*<-Sí la resolucion está en 600px, sucede el siguiente código->*/
+@media screen and (max-width: 600px) {
+
+/*<-Por defecto dejamos las posiciones definidas del nav-btn (título de la web)->*/  
+.nav > .nav-btn {
+display: inline-block;
+position: absolute;
+right: 0%;
+top: 0%;
+  }
+
+/*Lo mismo de hace 1 dorito*/  
+.nav > .nav-btn > label {
+display: inline-block;
+width: 50px;
+height: 50px;
+padding: 13px;
+}
+
+/*<-Cuando ya tenemos el navegador verificamos realizamos lo siguiente->*/
+.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label { background-color: rgba(0, 0, 0, 0.3); }
+
+/*<-Sí el navegador es mayor al tamaño del título, label y span sucede lo siguiete->*/  
+.nav > .nav-btn > label > span {
+display: block;
+width: 25px;
+height: 10px;
+border-top: 2px solid #eee;
+}
+
+/*<-Sitio en donde aparecen los links->*/
+.nav > .nav-links {
+position: absolute;
+display: block;
+width: 19%;
+height: 17px;
+font-size: 11px;
+background: linear-gradient(to bottom right,rgba(68, 18, 83, 0.767),rgba(35, 28, 131, 0.774));
+transition: all 0.3s ease-in;
+/*overflow-y: hidden;*/
+top: 49px;
+left: 81%;
+  }
+
+/*Seguimos adaptando los tamaños*/
+.nav > .nav-links > a { display: block; width: 100%; }
+
+/*<-Sí el navegador no fue checado dejamos la altura como 0%->*/  
+.nav > #nav-check:not(:checked) ~ .nav-links { height: 0%; }
+
+/*<-Si logramos tener verificado el navegador, realizamos el calculo del tamaño de la altura de los links->*/
+.nav > #nav-check:checked ~ .nav-links { height: calc(100vh - 50px); overflow-y: auto; } }
+
+/*<-Zona de Scrollbar->*/
+::-webkit-scrollbar { width: 10px; }
+
+/*<-El deslizador->*/
+::-webkit-scrollbar-track { background: #0d052e; }
+
+/*<-El fondo->*/
+::-webkit-scrollbar-thumb { background: #0737FA; }
+
+/*Cuando alcanza el limite (xD?)*/
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+
+/*<--Apartado dedicado al Responsive-->*/
+
+/*Telefono*/
+@media screen and (max-width: 800px){ 
+
+/*<-Cambiamos el margen de la web, así se cambia la manera de ver las cosas al usuario->*/
+body{ margin: 20%; margin-top: 40%; font-family: 'Apple II Screen Typeface', sans-serif; }
+
+/*<-Navegador adaptado->*/
+.nav-links{
+display: inline;
+font-size: 18px;
+left: 19%;
+position: relative;
+}
+
+/*<-Modificamos el player de spotify->*/
+.shortlist{
+border-radius: 15px;
+width: 170%;
+position: relative;
+left: -40%;
+height: 210%;
+}
+
+/*<-Ajustamos la caja donde estará el contenido->*/
+.center_box {
+background-color: rgba(35,23,101,.5);
+border: 1px solid #234b79;
+border-radius: 5px;
+width: 250%;
+position: relative;
+left: -10%;
+}
+
+}
