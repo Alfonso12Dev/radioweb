@@ -6,6 +6,12 @@
 <head>
 <title>En vivo | Los chamos informan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="Los chamos informan" />
+<meta name="icon" content="public/images/logo.webp">
+<meta property="og:description" content="Un proyecto de radio web para entretener a sus usuarios" />
+<meta property="og:url" content="https://alfonso12dev.github.io/radio/" />
+<meta property="og:image" content="/images/logo.webp" />
 <link href="public/css/live.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.cdnfonts.com/css/apple-ii-screen-typeface" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"> 
@@ -14,7 +20,7 @@
 
 <!--Contenido de la web-->
 <body>
-
+    
     <!--Barra de navegación-->
     <div class="nav">
     <input type="checkbox" id="nav-check">
@@ -36,10 +42,7 @@
     <a href="/radio/shortlist.html"><i class="fa-solid fa-ghost" style="color: #f5f7fa;"></i> | ShortList</a>
 
     <!--Sección 3 de la web-->
-    <a href="/radio/playlist.html"><i class="fa-solid fa-folder-open"></i> | All Playlist</a>
-
-    <!--Sección 4 de la web-->
-    <a href="/radio/live.html"><i class="fa-solid fa-mug-saucer fa-fade" style="color: #fafcff;"></i> | En vivo</a>
+    <a href="/radio/playlist.html"><i class="fa-solid fa-folder-open"></i> | Playlist</a>
       </div>
     </div>
 
@@ -49,21 +52,18 @@
 
 <!--Título de la sección-->
 <div>
-<p> <i class="fa-solid fa-rss fa-beat" style="color: #fafafa;"></i> | Sección dedicada para la Radio en vivo!</p>
+<p> <i class="fa-solid fa-thumbtack fa-bounce" style="color: #ff0a60;"></i> | Sección dedicada para los créditos de la radio web!</p>
 </div>
 
-    
-<!-- HTML5 Player (streamerr.co) -->
-<iframe class="audio" name="contenedorPlayer" class="cuadroBordeado" allow="autoplay" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no  src="https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=https://207.244.66.85:12236&fondo=11&formato=mp3&color=16&titulo=2&autoStart=1&vol=5&tipo=14&nombre=Los+chamos+informan&imagen=https://cp.usastreams.com/playerHTML5/img/cover.png"></iframe>
+<!--Zona de status-->
+<div>
+<ul class="creditos">
+</ul>
 </div>
 
 <!--Scripts-->
 <script src="https://kit.fontawesome.com/1b50d6a4c9.js" crossorigin="anonymous"></script>
 <script src="./public/scripts/loader.js"></script>
-<script src="audiojs/audio.min.js"></script>
-<script>
-//<-Inicializando los audios->
-audiojs.events.ready(function() { let as = audiojs.createAll(); });
-</script>
+<script src="./public/scripts/live.js"></script>
 </body>
 </html>
