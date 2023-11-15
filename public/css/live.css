@@ -13,6 +13,9 @@ font-stretch: condensed;
 font-size: medium;
 }
 
+/*Creamos un elemento para remarcar los créditos*/
+.remarcar{ color: #EE1E6A; font-weight: bold; }
+
 /*<--Fondo de la web-->*/
 body {
 background: url("https://bitcoinmaniagame.com/app/images/homepage/sity_2.png");
