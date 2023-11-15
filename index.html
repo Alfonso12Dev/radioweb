@@ -6,7 +6,7 @@
 <head>
 <title>Inicio | Los chamos informan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="public/css/rework.css" rel="stylesheet" type="text/css" />
+<link href="/css/rework.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.cdnfonts.com/css/apple-ii-screen-typeface" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -29,24 +29,27 @@
 <div class="nav-links">
 
 <!--Sección 1 de la web-->
-<a href="/radio/index.html" ><i class="fa-solid fa-house fa-bounce" style="color: #f7f7f7;"></i> | Lobby</a>
+<a href="/index.html" ><i class="fa-solid fa-house fa-bounce" style="color: #f7f7f7;"></i> | Lobby</a>
 
 <!--Sección 2 de la web-->
-<a href="/radio/shortlist.html"><i class="fa-solid fa-ghost" style="color: #f5f7fa;"></i> | ShortList</a>
+<a href="/shortlist.html"><i class="fa-solid fa-ghost" style="color: #f5f7fa;"></i> | ShortList</a>
 
 <!--Sección 3 de la web-->
-<a href="/radio/playlist.html"><i class="fa-solid fa-folder-open"></i> | All Playlist</a>
+<a href="/playlist.html"><i class="fa-solid fa-folder-open"></i> | Playlist</a>
 
 <!--Sección 4 de la web-->
-<a href="/radio/live.html"><i class="fa-solid fa-mug-saucer fa-fade" style="color: #fafcff;"></i> | En vivo</a>
+<a href="/live.html"><i class="fa-solid fa-mug-saucer fa-fade" style="color: #fafcff;"></i> | Créditos</a>
   </div>
 </div>
+
+<!-- HTML5 Player (streamerr.co) -->
+<iframe class="playerAudio" name="contenedorPlayer" class="cuadroBordeado" allow="autoplay" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no  src="https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=http://207.244.66.85:12236/listen.pls&fondo=11&formato=mp3&color=16&titulo=2&autoStart=1&vol=5&tipo=14&nombre=Los+chamos+informan&imagen=https://cp.usastreams.com/playerHTML5/img/cover.png"></iframe>
     
 <!--Contenido después del navegador de la web-->
 <div id="content">
 
 <!--Logo de la institución-->
-<img class="content_image" src="public/images/logo.webp"></img>
+<img class="content_image" src="/images/logo.webp"></img>
 
 <!--Realizamos un sobre mí acerca de la radio-->
 <p>Es un proyecto estudiantil, que propone que los estudiantes desarrollen una innovación
@@ -64,15 +67,15 @@ para seguir viendo</a>
 
 <!--Beneficio #1-->
 <div class="box"  id="show_red">
-<img src="public/images/clap.gif" class="img_beneficios">
+<img src="/images/clap.gif" class="img_beneficios">
 <p class="bf">Se actualiza constantemente brindando una mayor comodidad para el usuario
 </p>
- </div>
+</div>
 
 <!--Beneficio #2-->
 <div class="box" id="show_red">
-<img src="public/images/code.webp" class="img_beneficios">
-<p class="bf">Es sencilla de usar, es de dominio público y puedes escuchar música
+<img src="/images/code.webp" class="img_beneficios">
+<p class="bf">Es sencilla de usar, es de dominio público y puedes apoyar el surgimiento de proyectos estudiantiles
 </p>
 
 </div>
@@ -80,7 +83,7 @@ para seguir viendo</a>
 <!--Beneficio #3-->
     <!--style="margin-top: 60%;margin: -38%;margin-left: 40%"--> 
 <div class="box" id="show_red">
-<img src="public/images/sterio.gif" class="img_beneficios">
+<img src="/images/sterio.gif" class="img_beneficios">
 <p class="bf">Puedes descubrir nuevas músicas y entretenerte un rato
   </p>
 
@@ -93,7 +96,7 @@ para seguir viendo</a>
 
 <!--Importamos código javascript-->
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="./public/scripts/loader.js"></script>
+<script src="./scripts/loader.js"></script>
 <!-- <script src="./scripts/antizoom.js"></script> -->
 <!-- <script src="./scripts/config.js"></script> -->
 <!-- <script src="./scripts/scripts.js"></script> -->
