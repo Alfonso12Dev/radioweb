@@ -23,5 +23,5 @@ mensaje.innerHTML = `
 
 <li>↓</li>
 
-<li><i class="fa-solid fa-music fa-shake" style="color: #4be278;"></i> | Alexander Rondón → <i class="remarcar">Encargado del manejo de los en vivo</i></li>
+<li><i class="fa-solid fa-music fa-shake" style="color: #4be278;"></i> | Alexander Rondón → <i class="remarcar">Encargado del manejo de las transmisiones en vivo</i></li>
 `
