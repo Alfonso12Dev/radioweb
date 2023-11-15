@@ -31,6 +31,16 @@ width: 60%;
 padding: 40px 40px;
 }
 
+/*Créditos*/
+.creditos {
+width: auto;
+list-style: none;
+height: auto;
+margin: auto;
+font-stretch: condensed;
+font-size: medium;
+}
+
 /*<-Sitio donde se reproduce el en vivo->*/
 .cuadroBordeado{ width: 120%; height: 40%; position: relative; }
 
