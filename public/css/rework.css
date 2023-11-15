@@ -20,6 +20,14 @@ margin: 20%;
 margin-top: 10%;   
 }
 
+/*<-Player del en vivo para la sección de home->*/
+.playerAudio {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 8%;
+}
+
 /*<--Imagen de la institución (home)-->*/
 .content_image {
 width: 40%;
