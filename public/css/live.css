@@ -3,6 +3,16 @@
 
 /*https://replit.com/@Evanisha/Personal-Information-Stealer
 
+/*Créditos*/
+.creditos {
+width: auto;
+list-style: none;
+height: auto;
+margin: auto;
+font-stretch: condensed;
+font-size: medium;
+}
+
 /*<--Fondo de la web-->*/
 body {
 background: url("https://bitcoinmaniagame.com/app/images/homepage/sity_2.png");
@@ -29,16 +39,6 @@ border: 1px solid #234b79;
 border-radius: 5px;
 width: 60%;
 padding: 40px 40px;
-}
-
-/*Créditos*/
-.creditos {
-width: auto;
-list-style: none;
-height: auto;
-margin: auto;
-font-stretch: condensed;
-font-size: medium;
 }
 
 /*<-Sitio donde se reproduce el en vivo->*/
