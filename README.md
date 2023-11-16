@@ -12,7 +12,7 @@ Esto es un proyecto estudiantil, que tiene como fin formar una radio web
 
 ## 📋 Licencia
 
-Este proyecto cuenta con una licencia MIT License - revisa el archivo de [LICENCIA](LICENCIA.md).
+Este proyecto cuenta con una licencia MIT License - revisa el archivo de [LICENCIA](license).
 
 ## 💻 Actividad del proyecto
 
