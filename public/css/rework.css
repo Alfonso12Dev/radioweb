@@ -1,106 +1,95 @@
-/*<--Hacemos que todos los elementos tengan una animación de transición-->*/
-* { box-sizing: border-box; transition: 0.4s ease all; }
+/* Hacemos que todos los elementos tengan una animación de transición */
+* {
+  box-sizing: border-box;
+  transition: 0.4s ease all;
+}
 
-/*<--Fondo de la web-->*/
+/* Fondo de la web */
 body {
-background: url("https://bitcoinmaniagame.com/app/images/homepage/sity_2.png");
-background-attachment: fixed;
-background-color: #1e0150;
-color: white;
-background-size: cover;
-font-family: 'Apple II Screen Typeface', sans-serif;
-font-size: 20px;
-background-repeat: no-repeat;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-position: relative;
-margin: 20%;
-margin-top: 10%;   
+  background: url("https://bitcoinmaniagame.com/app/images/homepage/sity_2.png") fixed;
+  background-color: #1e0150;
+  color: white;
+  background-size: cover;
+  font-family: 'Apple II Screen Typeface', sans-serif;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin: 20%;
+  margin-top: 10%;
 }
 
-/*<-Player del en vivo para la sección de home->*/
+/* Player del en vivo para la sección de home */
 .playerAudio {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    height: 8%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 8%;
 }
 
-/*<--Imagen de la institución (home)-->*/
+/* Imagen de la institución (home) */
 .content_image {
-width: 40%;
-border-radius: 27px;
+  width: 40%;
+  border-radius: 27px;
 }
 
-/*<-Establecemos el tamaño de las imágenes en el apartado de beneficio->*/
-.img_beneficios{
-width: 33%;
+/* Establecemos el tamaño de las imágenes en el apartado de beneficio */
+.img_beneficios {
+  width: 33%;
 }
 
-/*<--Apartado en donde creamos un estilo para la animación de algunas cajas, además de crear cajas para la sección de (HOME)-->*/
+/* Apartado en donde creamos un estilo para la animación de algunas cajas, además de crear cajas para la sección de (HOME) */
 #show_red {
-animation: typing 5s steps(40) 1s 1 normal both, blink 1s steps(1) infinite;
-border-right: 0.1em solid #F92525;
-border: inset #F92525;
+  animation: typing 5s steps(40) 1s 1 normal both, blink 1s steps(1) infinite;
+  border-right: 0.1em solid #F92525;
+  border-style: inset;
 }
 
-/*Creamos una animación que comience con el tamaño desde 0*/
-@keyFrames typing { from { width: 0} }
-
-/*Y luego vaya cambiando el color a transparente cuando llegue al 50% (porque básicamente será una luz intermitente que se muestre y desaparezca cada 5s)*/
-@keyFrames blink { 50% { border-color: transparent} }
-
-
-/*<-Caja en donde estarán las otras cajas (xd)->*/
-.manager_box{
-display: inline-flex;
-position: relative;
-top: 50%;
+/* Creamos una animación que comience con el tamaño desde 0 */
+@keyframes typing {
+  from { width: 0; }
 }
 
-/*<-Caja general->*/
+/* Y luego vaya cambiando el color a transparente cuando llegue al 50% */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Caja en donde estarán las otras cajas (xd) */
+.manager_box {
+  display: inline-flex;
+  position: relative;
+  top: 50%;
+}
+
+/* Caja general */
 .box {
-color: white;
-position: relative;
-width: 40%;
-height: 45%;
-font-size: 19px;
-padding: 10px;
-margin: 10px;
+  color: white;
+  position: relative;
+  width: 40%;
+  height: 45%;
+  font-size: 19px;
+  padding: 10px;
+  margin: 10px;
 }
 
+/* Sección dedicada para clases y/o aumentar tamaño de letras o cambiar colores */
+.title_big {
+  font-size: 30px;
+}
 
-/*<-Sección dedicada para clases y/o aumentar tamaño de letras o cambiar colores-->*/
-.title_big { font-size: 30px; }
-
-/*<--Navegador-->**/
+/* Navegador */
 .nav {
-height: 62px;
-width: 100%;
-background: black;
-background-color: rgb(0 0 0 / 60%);
-position: fixed;
-top: 0%;
+  height: 62px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* asegura que esté por encima del resto del contenido */
 }
-
-/*Sí el navegador es mayor que el nav-heador, se pone el siguiente estilo*/
-.nav > .nav-header { display: inline; }
-
-/*<-Sí el tamaño del nav es mayor que el header y el título, se hará el siguiente código->*/
-.nav > .nav-header > .nav-title {
-display: inline-block;
-font-size: 22px;
-font-weight: 15px;
-color: brown;
-float: left;
-position: relative;
-padding: 10px 10px 10px 10px;
-}
-
-/*<-Sí el nav es mayor que la clase en donde aparece el título, se ejecuta el siguiente código->*/
-.nav > .nav-btn { display: none; }
 
 /*<-Sí el nav es mayor que los links del nav, se ejecuta el siguiente código->*/
 .nav > .nav-links { font-size: 18px; left: -10%; position: relative; }
@@ -162,77 +151,90 @@ transition: all 0.3s ease-in;
 top: 49px;
 left: 81%;
   }
-
-/*<-El player de la música->*/
-.main{
-min-width: 70%;
-left: 16%;
-position: absolute;
+/* Player de la música */
+.main {
+  min-width: 70%;
+  left: 16%;
+  position: absolute;
 }
 
-/*Seguimos adaptando los tamaños*/
-.nav > .nav-links > a { display: block; width: 100%; }
-
-/*<-Sí el navegador no fue checado dejamos la altura como 0%->*/  
-.nav > #nav-check:not(:checked) ~ .nav-links { height: 0%; }
-
-/*<-Si logramos tener verificado el navegador, realizamos el calculo del tamaño de la altura de los links->*/
-.nav > #nav-check:checked ~ .nav-links { height: calc(100vh - 50px); overflow-y: auto; } }
-
-/*<-Zona de Scrollbar->*/
-::-webkit-scrollbar { width: 10px; }
-
-/*El deslizador*/
-::-webkit-scrollbar-track { background: #0d052e; }
-
-/*El fondo*/
-::-webkit-scrollbar-thumb { background: #0737FA; }
-
-/*Cuando alcanza el limite (xD?)*/
-::-webkit-scrollbar-thumb:hover { background: #555; }
-
-/*<--Apartado dedicado al Responsive-->*/
-
-/*Telefono*/
-@media screen and (max-width: 800px){ 
-
-/*<-Cambiamos el margen de la web, así se cambia la manera de ver las cosas al usuario->*/
-body{
-margin: 20%;
-margin-top: 40%; 
-font-family: 'Apple II Screen Typeface', sans-serif;
+/* Ajuste de tamaño para links */
+.nav > .nav-links > a {
+  display: block;
+  width: 100%;
 }
 
-/*<-Navegador adaptado->*/
-.nav-links{
-display: inline;
-font-size: 18px;
-left: 19%;
-position: relative;
-}
-    
-/*<--Imagen de la institución (home)-->*/
-.content_image {
-width: 90%;
-border-radius: 35px;
+/* Altura de links si el navegador no está chequeado */
+.nav > #nav-check:not(:checked) ~ .nav-links {
+  height: 0%;
 }
 
-/*<-Cambiamos los atributos de box para adaptarlo->*/
-.box {
-color: white;
-position: relative;
-width: 70%;
-height: 25%;
-font-size: 13px;
-padding: 5px;
-margin: 7px;
-  } 
+/* Altura de links si el navegador está chequeado */
+.nav > #nav-check:checked ~ .nav-links {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}
 
-/*<-Caja en donde estarán las otras cajas (xd)->*/
-.manager_box{
-display: block;
-position: relative;
-top: 50%;
-    }
+/* Estilos de Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Deslizador */
+::-webkit-scrollbar-track {
+  background: #0d052e;
+}
+
+/* Fondo del deslizador */
+::-webkit-scrollbar-thumb {
+  background: #0737FA;
+}
+
+/* Efecto al pasar el mouse sobre el deslizador */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Estilos responsivos para pantalla de teléfono */
+@media screen and (max-width: 800px) {
+
+  /* Ajuste de margen y fuente para pantalla de teléfono */
+  body {
+    margin: 20%;
+    margin-top: 40%;
+    font-family: 'Apple II Screen Typeface', sans-serif;
+  }
+
+  /* Navegador adaptado para teléfono */
+  .nav-links {
+    display: inline;
+    font-size: 18px;
+    left: 19%;
+    position: relative;
+  }
+
+  /* Ajuste de tamaño para imagen de la institución en pantalla de teléfono */
+  .content_image {
+    width: 90%;
+    border-radius: 35px;
+  }
+
+  /* Ajuste de atributos de caja para adaptarlo a teléfono */
+  .box {
+    color: white;
+    position: relative;
+    width: 70%;
+    height: 25%;
+    font-size: 13px;
+    padding: 5px;
+    margin: 7px;
+  }
+
+  /* Ajuste para caja en donde estarán las otras cajas en pantalla de teléfono */
+  .manager_box {
+    display: block;
+    position: relative;
+    top: 50%;
+  }
 }
 
